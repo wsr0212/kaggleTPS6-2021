@@ -83,7 +83,7 @@ nbconvert==5.6.1
 nbformat==5.0.6
 nltk==3.5
 notebook==6.0.3
-numpy==.18.2
+numpy==1.18.2
 oauthlib==3.1.0
 opt-einsum==3.3.0
 panda==0.3.1
