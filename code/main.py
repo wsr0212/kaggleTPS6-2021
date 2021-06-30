@@ -61,7 +61,7 @@ if __name__ == "__main__":
   model = CascadeForestClassifier(n_jobs=-1,n_estimators=3,n_trees=200,max_depth=12,min_samples_leaf=5)
   model.fit(X_train, y_train.values)
 
-  y_pred = model.predict_proba(X_test.drop(columns='id').values)
+  y_pred = model.predict_proba(lda.transform(X_test))
   print(y_pred)
 
   out={}
